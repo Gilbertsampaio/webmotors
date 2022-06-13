@@ -1,4 +1,5 @@
 import React from 'react';
+import { BotSuperior } from '../components/BotSuperior';
 
 import "./home.scss";
 
@@ -6,10 +7,9 @@ export function Home() {
 
     return (
         <>
+            <BotSuperior />
             <div className="containerButton box">
                 <div className="form-group">
-
-
                     <label className='labelFirst'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
