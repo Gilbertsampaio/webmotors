@@ -1,0 +1,21 @@
+header {
+    margin: 0;
+    color: #fff;
+
+    span {
+        color: #a6bef6;
+    }
+
+    img {
+        height: 4rem;
+        width: auto;
+    }
+
+    button {
+        svg {
+            font-size: 1.25rem;
+            margin-right: 5px;
+            margin-bottom: -3px
+        }
+    }
+}

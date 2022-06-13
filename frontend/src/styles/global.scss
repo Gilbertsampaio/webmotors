@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --maxwidth: 1280px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background: #f0f2f5;
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: var(--maxwidth);
+    margin: 0 auto;
+    padding: 1rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+}
+
+.containerButton {
+    max-width: var(--maxwidth);
+    margin: 0 auto;
+    padding: 1rem 0rem 3rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    h2 {
+        color: #5429cc;
+
+        span {
+            color: #2980b9;
+        }
+    }
+
+    .primaryButton {
+
+        float: right;
+
+        svg {
+            font-size: 1.25rem;
+            margin-right: 5px;
+            margin-bottom: -3px;
+        }
+    }
+}
+
+.react-modal-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.react-modal-content {
+    width: 100%;
+    max-width: 576px;
+    background: #f0f2f5;
+    padding: 3rem;
+    position: relative;
+    border-radius: 0.25rem;
+}
+
+.react-modal-close {
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+    border: 0;
+    background: #2980b9;
+    transition: filter 0.2s;
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: #fff;
+    padding: 10px 10px 5px;
+    border-radius: 0px 2px 0 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    &:hover {
+        filter: brightness(0.9);
+        transition: all .3s ease;
+    }
+
+    &.add {
+        background: #33cc95;
+    }
+
+    &.del {
+        background: #b92935;
+    }
+}
+
+table {
+
+    min-width: var(--maxwidth);
+    margin: 0 auto;
+    padding: 1rem 0rem 3rem;
+    border-spacing: 0 0.5rem;
+    font-size: 17px;
+
+    th {
+        color: #969cb3;
+        font-weight: 400;
+        padding: 1rem 2rem;
+        text-align: left;
+        line-height: 1.5rem;
+    }
+
+    td {
+        padding: 1rem 2rem;
+        border: 0;
+        color: #969cb3;
+        font-weight: 400;
+
+        &:first-child {
+            color: #363f5f;
+            border-radius: 0.25rem 0 0 0.25rem;
+        }
+
+        &:last-child {
+            border-radius: 0 0.25rem 0.25rem 0;
+        }
+
+        &.center {
+            text-align: center;
+        }
+    }
+}
